@@ -1,0 +1,2 @@
+# webpack-template-pug
+PUG
