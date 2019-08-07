@@ -3,6 +3,11 @@ import './js/'
 
 // SCSS
 import './assets/scss/main.scss'
+import './pug/includes/modules/button/button.scss'
+import './pug/includes/modules/footer/footer.scss'
+import './pug/includes/modules/social/social.scss'
+import './pug/includes/modules/logo/logo.scss'
+import './pug/includes/modules/header/header.scss'
 
 // CSS (example)
 // import './assets/css/main.css'
