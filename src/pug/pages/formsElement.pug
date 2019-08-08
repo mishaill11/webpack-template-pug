@@ -1,0 +1,22 @@
+extends ../layout/forms-element
+block variables
+    - var title = 'forms element';
+    - var description = '';
+    - var pageClass = 'forms-page';
+
+block content
+    section
+        .container
+            .forms
+                +textField('text field', 'Email')
+                +dropdown('Гости')
+                +datefield('Дата рождения')
+                +date-dropdown('Дата заселения', 'Дата выселения')
+                +filter-date('filter date dropdown')
+                +subscription-textfield('subscription text field')
+                +dropdown-rooms('выбор комнаты')
+                +checkbox-list('expandable checkbox list')
+                +about-room('assets/img/insert_emoticon.svg', 'Комфорт','Шумопоглощающие стены')
+                +about-room('assets/img/location_city.svg', 'Удобство','Окно в каждой из спален')
+
+block script

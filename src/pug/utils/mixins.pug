@@ -2,3 +2,128 @@ mixin item(title, descr)
   .item
     h2.item-title= title
     p.item-descr= descr
+
+mixin colors(className, title, descr)
+  .block-color
+    .block-color__color(class= "" + className)
+    .block-color__inf
+      h2.block-color__inf_title= title
+      p= descr
+
+mixin headers(hx, text)
+  .block-headers
+    if (hx === 'H1')
+      h1(class="block-headers_grey")= hx
+      h1= text
+    else if (hx === 'H2')
+      h2(class="block-headers_grey")= hx
+      h2= text
+    else if (hx === 'H3')
+      h3(class="block-headers_grey")= hx
+      h3= text
+    else if (hx === 'Body')
+      p(class='block-headers_grey')= hx
+      p= text
+
+mixin textField(title, typeField)
+    h3= title
+    input(type= 'email' class='textField' placeholder= typeField)
+
+mixin dropdown(title)
+  h3= title
+    .guest
+      input(type= 'text' class='dropdown' placeholder= 'Сколько гостей')
+      img(src="assets/img/arrowdown.svg" class='arrow-down')
+
+mixin datefield(title)
+  h3= title
+  input(type= 'date' placeholder='ДД.ММ.ГГГГ' class='textField')
+
+mixin date-dropdown(title_one, title_two)
+  .date-dropdown
+    .date-dropdown__first
+      h3= title_one
+      input(type= 'date' placeholder='ДД.ММ.ГГГГ' class='dateField')
+    .date-dropdown__second
+      h3= title_two
+      input(type= 'date' placeholder='ДД.ММ.ГГГГ' class='dateField')
+
+mixin filter-date(title)
+  h3= title
+  input(type= 'date' placeholder='ДД.ММ.ГГГГ' class='dateField filter-date')
+
+mixin subscription-textfield(title)
+  .subscription-textfield
+    h3.subscription-textfield__title= title
+    input(type= 'email' placeholder='Email' class='subscription-textfield__input')
+    img(src="assets/img/arrow_forward.svg" class='subscription-textfield__icon')
+
+mixin dropdown-rooms(title)
+  .dropdown-rooms
+    h3.dropdown-rooms__title= title
+    input(type= 'text' placeholder='Выбор' class='dropdown-rooms__input')
+    .dropdown-rooms__drop
+      ul.dropdown-rooms__drop-list
+        li.dropdown-rooms__drop-list-li
+          h3= 'спальни'
+          .circle
+            .circle-minus
+               .circle-minus__elem -
+            h3= 2
+            .circle-plus
+               .circle-plus__elem +
+        li.dropdown-rooms__drop-list-li
+          h3= 'кровати'
+          .circle
+            .circle-minus
+              .circle-minus__elem -
+            h3= 2
+            .circle-plus
+              .circle-plus__elem +
+        li.dropdown-rooms__drop-list-li
+          h3= 'ванные комнаты'
+          .circle
+            .circle-minus
+              .circle-minus__elem -
+            h3= 0
+            .circle-plus
+              .circle-plus__elem +
+
+mixin checkbox-list(title)
+  .checkbox-title
+    h3= title
+    img(src="assets/img/arrowdown.svg" class="checkbox-title__img")
+  .checkbox-list
+    .checkbox-list__item
+      input#check(type= 'checkbox' class='checkbox checkbox-list__item-input')
+      label(for='check' class='checkbox-list__item-label')= 'Завтрак'
+    .checkbox-list__item
+      input#check1(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check1' class='checkbox-list__item-label')= 'Письменный стол'
+    .checkbox-list__item
+      input#check2(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check2' class='checkbox-list__item-label')= 'Стул для кормления'
+    .checkbox-list__item
+      input#check3(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check3' class='checkbox-list__item-label')= 'Кроватка'
+    .checkbox-list__item
+      input#check4(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check4' class='checkbox-list__item-label')= 'Телевизор'
+    .checkbox-list__item
+      input#check5(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check5' class='checkbox-list__item-label')= 'Шампунь'
+    .checkbox-list__item
+      input#check6(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check6' class='checkbox-list__item-label')= 'Телевизор'
+    .checkbox-list__item
+      input#check7(type= 'checkbox' class='checkbox-list__item-input')
+      label(for='check7' class='checkbox-list__item-label')= 'Шампунь'
+
+mixin about-room(url, title, sub)
+  .about-room
+    .about-room__img
+      img(src= url)
+    .about-room__desc
+      p.about-room__desc-title= title
+      p.about-room__desc-sub= sub
+  .about-line

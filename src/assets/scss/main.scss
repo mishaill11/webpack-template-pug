@@ -20,6 +20,184 @@ html {
   }
 }
 
+.Dark_Shade_100 {
+  background: #1F2041;
+}
+.Dark_Shade_75 {
+  background: #1F2041;
+  opacity: .75;
+}
+.Dark_Shade_50 {
+  background: #1F2041;
+  opacity: .50;
+}
+.Dark_Shade_25 {
+  background: #1F2041;
+  opacity: .25;
+}
+.Dark_Shade_5 {
+  background: #1F2041;
+  opacity: .05;
+}
+.Purple {
+  background: #BC9CFF;
+}
+
+.Green {
+  background: #6FCF97;
+}
+.block-color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.block-color__inf_title {
+  font-weight: bold;
+}
+.block-color__color {
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  margin-right: 40px;
+}
+.block-headers {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.block-headers_grey {
+  color: rgba(31, 32, 65, 0.25);
+  margin-right: 30px;
+
+}
+.block-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 145px;
+  margin-bottom: 145px;
+}
+.forms {
+  margin-top: 143px;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked)
+{
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:before {
+  border: 1px solid #BC9CFF;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 6px;
+  top: 6px;
+  width: 8px;
+  height: 6px;
+  border-left: 2px solid #BC9CFF;
+  border-bottom: 2px solid #BC9CFF;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+//.checkbox {
+//  position: absolute;
+//  z-index: -1;
+//  opacity: 0;
+//  margin: 10px 0 0 20px;
+//}
+//.checkbox + label {
+//  position: relative;
+//  padding: 0 0 0 30px;
+//  cursor: pointer;
+//}
+//.checkbox + label:before {
+//  content: '';
+//  position: absolute;
+//  top: -4px;
+//  left: 0;
+//  width: 20px;
+//  height: 20px;
+//  border: 1px solid rgba(31, 32, 65, 0.25);
+//  border-radius: 4px;
+//  background: #fff;
+//  transition: .2s;
+//}
+////.checkbox + label:after {
+////  content: '';
+////  position: absolute;
+////  top: -2px;
+////  left: 2px;
+////  width: 22px;
+////  height: 22px;
+////  border-radius: 10px;
+////  background: #FFF;
+////  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+////  transition: .2s;
+////}
+//.checkbox:checked + label:before {
+//
+//}
+//.checkbox:checked + label:after {
+//  left: 26px;
+//  //left: 3px;
+//  //top: 4px;
+//  width: 10px;
+//  height: 5px;
+//  border-radius: 1px;
+//  border-left: 4px solid #e145a3;
+//  border-bottom: 4px solid #e145a3;
+//  -webkit-transform: rotate(-45deg);
+//  -moz-transform: rotate(-45deg);
+//  -o-transform: rotate(-45deg);
+//  -ms-transform: rotate(-45deg);
+//  transform: rotate(-45deg);
+//}
+//.checkbox:focus + label:before {
+//  //box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+//}
 body {
   margin: 0;
   padding: 0;
@@ -33,7 +211,34 @@ body {
 *, *:before, *:after { box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
+p {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  color: rgba(31, 32, 65, 0.75);
+}
+h1 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
 
+h3 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1F2041;
+  text-transform: uppercase;
+}
 a { text-decoration: none; }
 
 ul, li {

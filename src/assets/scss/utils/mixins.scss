@@ -20,3 +20,201 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+.textField {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 5px;
+}
+.textField::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+.textField:hover {
+  border: 1px solid rgba(31, 32, 65, 0.75);
+}
+.textField:hover::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+.textField:focus {
+  border: 1px solid rgba(31, 32, 65, 0.75);
+}
+.textField:focus::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 320px;
+  height: 44px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 5px;
+}
+.dropdown::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+
+}
+.guest {
+  position: relative;
+}
+.arrow-down {
+  position: relative;
+  right: 30px;
+}
+
+.dateField {
+  width: 150px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 11.56px;
+  padding-bottom: 8.44px;
+  margin-top: 5px;
+}
+
+.date-dropdown{
+  display: flex;
+}
+.date-dropdown__first{
+  margin-right: 20px;
+}
+
+.filter-date {
+  width: 266px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.subscription-textfield__input {
+  width: 266px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 11.56px;
+  padding-bottom: 8.44px;
+  margin-top: 5px;
+}
+.subscription-textfield__input::placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.subscription-textfield__icon {
+  position: relative;
+  right: 30px;
+}
+
+.dropdown-rooms__input {
+  width: 266px;
+  height: 44px;
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px 4px 0 0;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 11.56px;
+  padding-bottom: 8.44px;
+  margin-top: 5px;
+}
+.dropdown-rooms__input::placeholder {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.dropdown-rooms__drop {
+  position: relative;
+  top: -1px;
+  width: 266px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 0 0 4px 4px;
+}
+
+.dropdown-rooms__drop-list-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+  margin-bottom: 11px;
+  margin-left: 15px;
+}
+.circle {
+  display: flex;
+  width: 92px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 7px;
+}
+.circle-minus, .circle-plus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 20px;
+}
+
+.circle-minus__elem, .circle-plus__elem {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-flow: column;
+}
+.checkbox-title__img {
+  margin-left: 40px;
+  transform: rotate(-180deg);
+}
+.checkbox-list__item {
+  margin-bottom: 5px;
+}
+.checkbox-list__item-input {
+  list-style-type: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+
+.checkbox-list__item-label {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.5)
+}
+.checkbox-title {
+  display: flex;
+}
+
+.about-room {
+  display: flex;
+  align-items: center;
+}
+
+.about-room__img {
+  margin-right: 13px;
+}
+
+.about-room__desc-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.about-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: rgba(31, 32, 65, 0.1);
+}

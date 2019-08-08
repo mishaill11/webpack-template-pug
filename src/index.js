@@ -3,6 +3,7 @@ import './js/'
 
 // SCSS
 import './assets/scss/main.scss'
+import './assets/scss/utils/mixins.scss'
 import './pug/includes/modules/button/button.scss'
 import './pug/includes/modules/footer/footer.scss'
 import './pug/includes/modules/social/social.scss'

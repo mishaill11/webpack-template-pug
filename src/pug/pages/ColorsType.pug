@@ -1,0 +1,32 @@
+
+extends ../layout/second
+block variables
+    - var title = 'Webpaasdck + Pug';
+    - var description = 'Descriptasdion for Webpack + Pug';
+    - var pageClass = 'sec-page';
+
+block content
+    section
+        .container
+            .block-content
+                .colors
+                    +colors('Dark_Shade_100','Dark Shade 100%','#1F2041')
+                    +colors('Dark_Shade_75','Dark Shade 75%','#1F2041')
+                    +colors('Dark_Shade_50','Dark Shade 50%','#1F2041')
+                    +colors('Dark_Shade_25','Dark Shade 25%','#1F2041')
+                    +colors('Dark_Shade_5','Dark Shade 5%','#1F2041')
+                    +colors('Purple','Purple','#BC9CFF')
+                    +colors('Green','Green','#6FCF97')
+                .headers
+                    +headers('H1', 'This one is the sub-section or widget title')
+                    +headers('H2', 'Next one is the item title inside widgets')
+                    +headers('H3', 'This is a label or CTA text')
+                    +headers('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+
+block script
+    script(type='text/javascript').
+        const foo = true;
+        let bar = function() {};
+        if (foo) {
+            bar(1 + 5)
+        }
